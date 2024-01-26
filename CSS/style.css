@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 26%;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.ow{
+    list-style: none;
+    padding: 26px 30px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.ow a{
+    text-decoration: none;
+    color: white;
+}
+
+.ow a:hover{
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../img/bg2.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.btn-cot a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+    
+}
+
+.stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch-div{
+    height: 400px;
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    margin: 40px 0;
+    box-shadow: 0 0 20px 9px rgb(0, 183, 255);
+    border-radius: 10px;
+}
+
+#startStop{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    padding: 8px 100px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 153, 255),rgb(176, 233, 255) );
+}
+
+#reset{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    padding: 8px 100px;
+    width: 100%;
+    background: linear-gradient(to right,rgb(176, 233, 255) , rgb(0, 153, 255));
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+
+@media (max-width: 670px){
+    .nav-list {
+        display: contents;
+        align-items: none;
+    }
+    .logo{
+        width: 40%;
+    }
+    .stopwatch{
+        height: 95vh;
+    }
+
+}
